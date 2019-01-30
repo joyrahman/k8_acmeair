@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: acmeair-customerservice-java
-        image: acmeair-customerservice-java:latest
+        image: joyrahman/acmeair-customerservice-java:latest
         ports:
           - containerPort: 9080
           - containerPort: 9443

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: acmeair-flightservice-java
-        image: acmeair-flightservice-java:latest
+        image: joyrahman/acmeair-flightservice-java:latest
         ports:
           - containerPort: 9080
           - containerPort: 9443
