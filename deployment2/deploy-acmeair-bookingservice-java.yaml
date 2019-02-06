@@ -65,11 +65,13 @@ metadata:
     service: acmeair-booking-db
   name: acmeair-booking-db
 spec:
+  type: NodePort
   ports:
   - name: "27017"
     port: 27017
     protocol: TCP
     targetPort: 27017
+    nodePort: 30037
   selector:
     service: acmeair-booking-db
 status:

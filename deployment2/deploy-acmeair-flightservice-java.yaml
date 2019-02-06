@@ -47,8 +47,10 @@ metadata:
   name: acmeair-flight-service
   namespace: default
 spec:
+  type: NodePort
   ports:
     - port: 9080
+      nodePort: 30040
   selector:
     name: acmeair-flight-deployment
 ---

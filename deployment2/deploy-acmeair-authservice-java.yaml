@@ -48,7 +48,9 @@ metadata:
   name: acmeair-auth-service
   namespace: default
 spec:
+  type: NodePort
   ports:
     - port: 9080
+      nodePort: 30038
   selector:
     name: acmeair-auth-deployment

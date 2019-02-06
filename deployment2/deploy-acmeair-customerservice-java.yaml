@@ -47,8 +47,10 @@ metadata:
   name: acmeair-customer-service
   namespace: default
 spec:
+  type: NodePort
   ports:
     - port: 9080
+      nodePort: 30039
   selector:
     name: acmeair-customer-deployment
 ---
